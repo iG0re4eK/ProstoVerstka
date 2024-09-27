@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .example {
   display: -ms-grid;
   display: grid;
@@ -15,6 +22,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: -o-linear-gradient(top, white, black);
   background: -webkit-gradient(
     linear,
     left top,
@@ -22,7 +30,6 @@
     from(white),
     to(black)
   );
-  background: -o-linear-gradient(top, white, black);
   background: linear-gradient(to bottom, white, black);
 }
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -777,7 +784,9 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 55px 1fr 55px 1fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 55px;
+  -webkit-column-gap: 55px;
+  -moz-column-gap: 55px;
+  column-gap: 55px;
   padding: 0 100px;
 }
 
@@ -870,7 +879,7 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+  gap: 10px;
 }
 
 .places__card {
@@ -966,7 +975,9 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 108px 1fr;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 108px;
+  -webkit-column-gap: 108px;
+  -moz-column-gap: 108px;
+  column-gap: 108px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1017,8 +1028,10 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr;
   grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 57px;
-  grid-row-gap: 57px;
+  -webkit-column-gap: 57px;
+  -moz-column-gap: 57px;
+  column-gap: 57px;
+  row-gap: 57px;
 }
 
 .top__card-pic {
@@ -1176,7 +1189,9 @@ img {
 
   .benefits__cards {
     padding: 0 15px;
-    grid-column-gap: 35px;
+    -webkit-column-gap: 35px;
+    -moz-column-gap: 35px;
+    column-gap: 35px;
   }
 
   .benefits__card {
@@ -1203,7 +1218,9 @@ img {
   }
 
   .tours__tour {
-    grid-column-gap: 35px;
+    -webkit-column-gap: 35px;
+    -moz-column-gap: 35px;
+    column-gap: 35px;
   }
 
   .tour__info {
@@ -1219,8 +1236,10 @@ img {
   }
 
   .top__cards {
-    grid-column-gap: 25px;
-    grid-row-gap: 55px;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+    row-gap: 55px;
   }
 
   .top__card {
